@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Quicksand&family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* //MENÚ PRINCIPAL// */
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: #003B73;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav a {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 5px;
+}
+
+nav a:hover {
+    color: #fff !important;
+}
+
+
+/* // BOTON WPP// */
+
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 30%);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 13px;
+}
+
+.whatsapp:hover {
+    background: white;
+    color: #25d366 !important;
+}
+
+
+/* //ENCABEZADO// */
+
+.hero {
+    position: relative;
+    background: url(https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    color: #0b1383;
+    font-size: 70px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+
+.hero p {
+    color: #0b1383;
+    padding: 0;
+    margin: 1em 0 0 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.btn1 {
+    display: inline-block;
+    margin: 1em 0 0 0;
+    background-color: #0b1383;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 2px solid #0b1383;
+    font-family: 'Quicksand';
+}
+
+.btn1:hover {
+    background-color: white;
+    color: #0b1383;
+    border: 2px solid #0b1383;
+    text-decoration: none;
+}
+
+
+/* //CARDS// */
+
+.row {
+    min-height: 220px;
+}
+
+.row-bd {
+    display: flex;
+    justify-content: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.row-bds {
+    display: flex;
+    justify-content: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.team-area {
+    padding: 60px 0;
+}
+
+.section-heading {
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 65px;
+    letter-spacing: 5px;
+}
+
+.team-area .card {
+    border: none;
+    box-shadow: 0px 8px 16px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    background: #003B73;
+}
+
+.team-single:hover .side-two {
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.team-single:hover .side-one {
+    transform: rotateY(180deg);
+}
+
+.content-area {
+    transform: perspective(1000px);
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.side-one {
+    position: relative;
+    transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.side-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    transform: rotateY(-180deg);
+}
+
+.side-one,
+.side-two {
+    backface-visibility: hidden;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.name {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 75px;
+    color: white;
+    font-size: 24px;
+}
+
+.name #IMG {
+    width: 52px;
+    height: 52px;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+.sideb {
+    background: #ffffff;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-box-shadow: 0px 7px 0px 0px rgba(50, 50, 50, 0.11);
+    -moz-box-shadow: 0px 7px 0px 0px rgba(50, 50, 50, 0.11);
+    box-shadow: 0px 7px 0px 0px rgba(50, 50, 50, 0.11);
+}
+
+
+/* front pane, placed above back */
+
+.front {
+    z-index: 2;
+}
+
+
+/* back, initially hidden pane */
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.bubble-front {
+    position: relative;
+    width: 100%;
+    min-height: 150px;
+    padding: 0;
+    background: #003B73;
+}
+
+.footer {
+    background-color: #FAFAFA;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h5 {
+    color: #003B73;
+    font-weight: bold;
+}
+
+#backCard {
+    height: 200px;
+}
+
+
+/* //AGENDA CITA// */
+
+.request-form {
+    background-color: #0867c0;
+    padding: 40px 0px;
+    color: #fff;
+    height: 180px;
+}
+
+.request-form h4 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.request-form span {
+    font-size: 15px;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.filled-button {
+    margin-top: 20px;
+    background-color: #0867c0;
+    color: #fff;
+    border: solid;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.filled-button:hover {
+    background-color: #fff;
+    color: #0867c0;
+}
+
+
+/* //SERVICIOS// */
+
+.period {
+    font-size: 1.2rem;
+}
+
+.title-serv {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.5em;
+    color: #003B73;
+    padding-bottom: 50px;
+}
+
+.img-gif {
+    width: 13em;
+    height: 13em;
+}
+
+.bg-service {
+    background: #0b1383 !important;
+    border-radius: 20px 20px 0px 0px !important;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.border-service {
+    border-radius: 20px !important;
+    border-color: #0b1383 !important;
+    width: 245px !important;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-class {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff !important;
+    background-color: #0867c0 !important;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-class:hover {
+    background-color: #0b1383 !important;
+    box-shadow: 0px 15px 20px rgba(46, 116, 229, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.btn-class:active {
+    transform: translateY(-1px);
+}
+
+
+/* //TEXTO FUNCIONALIDAD//*/
+
+.text-style {
+    color: #003B73;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.title-b {
+    color: #003B73;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 3em !important;
+    font-weight: bolder;
+}
+
+
+/* //SOBRE MÍ// */
+
+.card-style {
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px #45494d;
+}
+
+.title-element {
+    color: #003B73;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+}
+
+.text-style p {
+    color: #003B73;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+}
+
+.by {
+    display: flex;
+    justify-content: end;
+}
+
+
+/* /FORMULARIO CONTACTO/ */
+
+.formcont {
+    background: #014d94;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 120px;
+}
+
+.agend {
+    border-radius: 10px;
+    box-shadow: 6px 20px 10px #003b73;
+}
+
+
+/* //PIE DE PÁGINA//*/
+
+.foot {
+    background-color: #000418;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.legal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+    .request-form {
+        height: 250px;
+    }
+    .row-bd {
+        width: 560px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    * {
+        overflow-x: hidden;
+    }
+    .request-form {
+        height: 300px;
+    }
+    .row-bd {
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+    }
+}
